@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# PLACEHOLDER: update the domain before launch
+Sitemap: https://brew.example/sitemap.xml

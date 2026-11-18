@@ -1,0 +1,9 @@
+{
+  "name": "BREW — Speciality Coffee Roasters",
+  "short_name": "BREW",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }],
+  "theme_color": "#14100d",
+  "background_color": "#14100d",
+  "display": "standalone",
+  "start_url": "/"
+}

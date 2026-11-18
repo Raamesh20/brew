@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-motion="full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Motion mode before first paint (avoids a layout flash). Kept in sync on change. -->
+    <script>
+      (function () {
+        var d = document.documentElement
+        var m = window.matchMedia('(prefers-reduced-motion: reduce)')
+        function set() { d.setAttribute('data-motion', m.matches ? 'reduced' : 'full') }
+        set()
+        if (m.addEventListener) m.addEventListener('change', set)
+        if ('scrollRestoration' in history) history.scrollRestoration = 'manual'
+      })()
+    </script>
+
+    <title>BREW — Speciality Coffee Roasters · The art of the slow pour</title>
+    <meta name="description" content="BREW roasts single-origin speciality coffee in small batches and pours it with patience. Discover our story, signature coffees, craft and coffee bar." />
+    <meta name="theme-color" content="#14100d" />
+    <!-- PLACEHOLDER: replace https://brew.example/ with the client's real domain -->
+    <link rel="canonical" href="https://brew.example/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BREW" />
+    <meta property="og:title" content="BREW — The art of the slow pour" />
+    <meta property="og:description" content="Single-origin speciality coffee, roasted in small batches and poured with patience." />
+    <meta property="og:url" content="https://brew.example/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1609050471053-8636409f9f5b?w=1200&h=630&q=75&auto=format&fit=crop" />
+    <meta property="og:image:alt" content="Espresso pouring from a portafilter" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon.svg" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400;0,500;1,400&family=Public+Sans:wght@400;500;600&display=swap"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "BREW",
+        "description": "Speciality coffee roasters and coffee bar.",
+        "url": "https://brew.example/",
+        "servesCuisine": "Coffee"
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CQ4m5kQY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DdJQXoeq.css">
+  </head>
+  <body>
+    <noscript>
+      <p style="padding: 2rem; font-family: system-ui; color: #ede5d8; background: #14100d">
+        BREW — speciality coffee roasters. Please enable JavaScript to view this site.
+      </p>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
